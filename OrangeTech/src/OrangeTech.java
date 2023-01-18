@@ -19,5 +19,27 @@ public class OrangeTech {
 
         String resultado1 = a==b? "Verdadeiro" :"Falso";
         System.out.println(resultado1);
+
+        SmartTv smartTv = new SmartTv();
+        System.out.println("Tv liga?: " + smartTv.ligada);
+        System.out.println("Canal atual: " +smartTv.canal);
+        System.out.println("Volume atual: " + smartTv.volume);
+        smartTv.ligar();
+        System.out.println("Tv liga?: " + smartTv.ligada);
+        System.out.println("Canal atual: " +smartTv.canal);
+        System.out.println("Volume atual: " + smartTv.volume);
+        smartTv.desligar();
+        System.out.println("Tv liga?: " + smartTv.ligada);
+        System.out.println("Canal atual: " +smartTv.canal);
+        System.out.println("Volume atual: " + smartTv.volume);
+        smartTv.aumentarVolume();
+        smartTv.aumentarVolume();
+        smartTv.diminuirVolume();
+        smartTv.aumentarCanal();
+        smartTv.aumentarCanal();
+        smartTv.diminuirCanal();
+        smartTv.mudarCanal(13);
+    
+
     }
 }
