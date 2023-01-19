@@ -35,7 +35,7 @@ public class RepetiçãoArrays {
                 soma = (soma + numero);
                 System.out.println("Média atual: "+ soma /count);
             }while(count<5);
-            */
+            
 
             // Par e Ímpar
 
@@ -56,7 +56,13 @@ public class RepetiçãoArrays {
             }while(count < quantidadeNumero);
             System.out.println("Quantidade de pares: " + quantidadePares);
             System.out.println("Quantidade de Ímpares: " + quantidadeIpares);
-    }  
+        */
+        int numero;
+        System.out.println("Digite o número para gerar tabuada: ");
+        numero = scan.nextInt();
+        for(int x = 1; x < 11; x++)
+            System.out.println(numero +" X " + x +" = "+ numero*x);
+        }  
 
     
 }
