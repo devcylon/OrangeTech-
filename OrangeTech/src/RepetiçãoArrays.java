@@ -20,6 +20,22 @@ public class RepetiçãoArrays {
             nota = scan.nextInt();
             }
             System.out.println("Sua nota foi: " + nota);
+
+            // do while
+            int numero;
+            int maior = 0;
+            int count = 0;
+            double soma= 0;
+            do{
+                System.out.println("Número");
+                numero = scan.nextInt();
+                if(numero > maior)maior = numero;
+                count++;
+                System.out.println("Maior:"+ maior);
+                soma = (soma + numero);
+                System.out.println("Média atual: "+ soma /count);
+            }while(count<5);
+  
     }   
     
 }
