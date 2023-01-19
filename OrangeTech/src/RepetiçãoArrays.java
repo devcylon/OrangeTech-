@@ -56,13 +56,24 @@ public class RepetiçãoArrays {
             }while(count < quantidadeNumero);
             System.out.println("Quantidade de pares: " + quantidadePares);
             System.out.println("Quantidade de Ímpares: " + quantidadeIpares);
-        */
+        // Tabuada
         int numero;
         System.out.println("Digite o número para gerar tabuada: ");
         numero = scan.nextInt();
         for(int x = 1; x < 11; x++)
             System.out.println(numero +" X " + x +" = "+ numero*x);
-        }  
+        */
+        // fatorial
+        int multiplicacao = 1;
+        System.out.println("Fatorial:");
+        int fatorial = scan.nextInt();
+        System.out.print(fatorial+"! =");
+        for(int i =fatorial;i >= 1; i--){
+            multiplicacao = multiplicacao * i;   
+        }
+        System.out.println(multiplicacao);
+        } 
+
 
     
 }
