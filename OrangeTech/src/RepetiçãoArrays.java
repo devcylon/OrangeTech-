@@ -72,13 +72,37 @@ public class RepetiçãoArrays {
             multiplicacao = multiplicacao * i;   
         }
         System.out.println(multiplicacao);
-    */
+    
     // vetor
         int[] vetor ={-5, -6, 15, 50, 8, 4};
         for(int i = 5; i >= 0; i--){
             System.out.print(vetor[i] +", ");
 
         }
+        */
+        // Array Consoante
+        String[] consoantes= new String[6];
+        int quantidadeConsoantes= 0;
+        int count = 0;
+        do{
+            System.out.println("digite uma letra:");
+            String letra= scan.next();
+            if(!(letra.equalsIgnoreCase("a")|
+            letra.equalsIgnoreCase("e")|
+            letra.equalsIgnoreCase("i")|
+            letra.equalsIgnoreCase("o")|
+            letra.equalsIgnoreCase("u"))){
+                consoantes[count] = letra;
+                quantidadeConsoantes++;
+                count++;
+
+            }
+        }while(count < (consoantes.length)-1);
+        for( String consoante : consoantes){
+            if(consoante!=null)
+            System.out.print(consoante + " ");
+        }
+        System.out.print(consoantes.length);
     } 
 
 
