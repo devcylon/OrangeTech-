@@ -62,7 +62,7 @@ public class RepetiçãoArrays {
         numero = scan.nextInt();
         for(int x = 1; x < 11; x++)
             System.out.println(numero +" X " + x +" = "+ numero*x);
-        */
+        
         // fatorial
         int multiplicacao = 1;
         System.out.println("Fatorial:");
@@ -72,7 +72,14 @@ public class RepetiçãoArrays {
             multiplicacao = multiplicacao * i;   
         }
         System.out.println(multiplicacao);
-        } 
+    */
+    // vetor
+        int[] vetor ={-5, -6, 15, 50, 8, 4};
+        for(int i = 5; i >= 0; i--){
+            System.out.print(vetor[i] +", ");
+
+        }
+    } 
 
 
     
