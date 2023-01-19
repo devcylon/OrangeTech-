@@ -1,3 +1,4 @@
+import java.util.Random;
 import java.util.Scanner;
 
 public class RepetiçãoArrays {
@@ -79,7 +80,7 @@ public class RepetiçãoArrays {
             System.out.print(vetor[i] +", ");
 
         }
-        */
+        
         // Array Consoante
         String[] consoantes= new String[6];
         int quantidadeConsoantes= 0;
@@ -103,6 +104,25 @@ public class RepetiçãoArrays {
             System.out.print(consoante + " ");
         }
         System.out.print(consoantes.length);
+        */
+        //números aleatórios
+
+        Random random = new Random();
+        int[] numerosAleatorios = new int[20];
+        for(int i = 0; i < numerosAleatorios.length; i++){
+            int numero = random.nextInt(100);
+            numerosAleatorios[i] = numero;
+        }
+
+        for (int numero  : numerosAleatorios) {
+        System.out.print(numero + " "); 
+        }
+        System.out.println(" ");
+        for (int numero  : numerosAleatorios) {
+            System.out.print((numero+1) + " ");
+                
+            }
+
     } 
 
 
