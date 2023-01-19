@@ -5,7 +5,7 @@ public class RepetiçãoArrays {
             Scanner scan = new Scanner(System.in);
             String nome;
             int idade;
-
+            /*
             while(true){
                 System.out.println("Nome:");
                 nome = scan.next();
@@ -35,7 +35,28 @@ public class RepetiçãoArrays {
                 soma = (soma + numero);
                 System.out.println("Média atual: "+ soma /count);
             }while(count<5);
-  
-    }   
+            */
+
+            // Par e Ímpar
+
+            int quantidadeNumero;
+            System.out.println("Digite a quantidade de números: ");
+            quantidadeNumero = scan.nextInt();
+            int count = 0;
+            int numero;
+            int quantidadePares = 0;
+            int quantidadeIpares = 0;
+
+            do{
+                System.out.println("Número: ");
+                numero = scan.nextInt();
+                if(numero % 2 == 0) quantidadePares++;
+                else quantidadeIpares++;
+                count++;
+            }while(count < quantidadeNumero);
+            System.out.println("Quantidade de pares: " + quantidadePares);
+            System.out.println("Quantidade de Ímpares: " + quantidadeIpares);
+    }  
+
     
 }
