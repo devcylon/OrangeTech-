@@ -11,7 +11,11 @@ public class RodaarOOP {
         System.out.println(carro1.getModelo());
         System.out.println(carro1.getCapacidadeTanque());
 
-        
+        Carro carro2 = new Carro("cinza", "mercedes", 60);
+        System.out.println(carro2.getCor());
+        System.out.println(carro2.getModelo());
+        System.out.println(carro2.getCapacidadeTanque());
+        System.out.println(carro2.totalValorTanque(4.30));
         
     }
 }
