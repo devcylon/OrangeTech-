@@ -104,7 +104,7 @@ public class RepetiçãoArrays {
             System.out.print(consoante + " ");
         }
         System.out.print(consoantes.length);
-        */
+        
         //números aleatórios
 
         Random random = new Random();
@@ -122,6 +122,10 @@ public class RepetiçãoArrays {
             System.out.print((numero+1) + " ");
                 
             }
+        */
+        import java.util.Scanner; 
+    
+
 
     } 
 
