@@ -1,10 +1,10 @@
-public class Carro {
+public class Carro extends Veiculo {
         String cor;
         String modelo;
         int capacidadeTanque;
 
         Carro(){
-
+ 
         }
         Carro(String cor, String modelo, int capacidadeTanque){
                 this.cor = cor;
