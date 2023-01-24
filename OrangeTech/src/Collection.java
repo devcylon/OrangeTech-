@@ -1,4 +1,6 @@
 import java.util.ArrayList;
+import java.util.Collections;
+import java.util.Iterator;
 import java.util.List;
 
 public class Collection {
@@ -20,6 +22,28 @@ public class Collection {
         System.out.println(notas);
         System.out.println(notas.contains(5.0));
         for(Double nota : notas) System.out.println(nota);
+        System.out.println(Collections.min(notas));
+        System.out.println(Collections.max(notas));
+        Iterator<Double> iterator = notas.iterator();
+        double soma = 0.0;
+        while(iterator.hasNext()){
+            Double next = iterator.next();
+            soma += next;
+        }
+        System.out.println(soma);
+        System.out.println(soma/notas.size());
+        notas.remove(0.0);
+        System.out.println(notas);
+        notas.remove(0);
+        System.err.println(notas);
+        Iterator<Double> iterator1 = notas.iterator();
+        while(iterator1.hasNext()){
+            double next = iterator1.next();
+            if(next < 7)iterator1.remove();
+        }
+        System.out.println(notas);
+
+
 
     }
     
